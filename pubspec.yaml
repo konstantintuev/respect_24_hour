@@ -1,6 +1,6 @@
 name: respect_24_hour
 description: Flutter Plug-In for checking whether the device is using 24-hour time.
-version: 0.0.1
+version: 0.0.2
 author: Konstantin Tuev <konstantin.tuev.github@gmail.com>
 homepage: https://github.com/konstantintuev/respect_24_hour
 
