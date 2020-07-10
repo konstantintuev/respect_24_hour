@@ -27,11 +27,7 @@ public class Respect24HourPlugin implements MethodCallHandler {
   @Override
   public void onMethodCall(MethodCall call, Result result) {
     if (call.method.equals("get24HourFormat")) {
-      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
-        result.success(DateFormat.is24HourFormat(context));
-      } else {
-        result.notImplemented();
-      }
+      result.success(DateFormat.is24HourFormat(context));
     } else {
       result.notImplemented();
     }

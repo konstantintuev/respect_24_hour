@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:respect_24_hour/respect_24_hour.dart';
+import 'package:is_24_hour_format/is_24_hour_format.dart';
 
 void main() => runApp(MyApp());
 

@@ -12,7 +12,7 @@ public class SwiftRespect24HourPlugin: NSObject, FlutterPlugin {
     switch call.method {
     case "get24HourFormat":
         let locale = NSLocale.current
-        let formatter : String = DateFormatter.dateFormat(fromTemplate: "j", options:0, locale:locale)!
+        let formatter : String = DateFormatter.dateFormat(fromTemplate: "jj", options:0, locale:locale)!
         result(!formatter.contains("a"))
     default:
         print("Not implemented \(call.method)")
