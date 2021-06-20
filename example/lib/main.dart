@@ -12,7 +12,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _is24HourTime;
+  String? _is24HourTime;
 
   @override
   void initState() {
@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    bool is24HourFormat;
+    bool? is24HourFormat;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
       is24HourFormat = await Respect24Hour.get24HourFormat;
